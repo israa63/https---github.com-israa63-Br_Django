@@ -1,0 +1,24 @@
+{% extends 'main/master.html' %}
+{% block contents %}
+    <table> 
+        <theader>
+            <tr>
+                <td>Category</td>
+                <td>Category doc</td>
+            
+                
+
+            </tr>
+        </theader>
+        {% for post in main%}  
+        <tr>
+            <td> {{post.catName}}</td>
+            <td> {{post.catDesc}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+{% endblock %}
+
+
+
